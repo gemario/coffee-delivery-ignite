@@ -24,8 +24,8 @@ export default {
         "yellow-dark": "#C47F17",
       },
       fontFamily: {
-        sans: ["Roboto", "sans-serif"],
-        sens: ["Baloo 2", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
       },
     },
   },
