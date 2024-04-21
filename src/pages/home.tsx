@@ -1,5 +1,6 @@
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
 import ImageHome from "../assets/image-home.svg";
+import { CoffeeList } from "../components/coffeList";
 
 export function Home() {
   return (
@@ -65,6 +66,9 @@ export function Home() {
         <h2 className="font-nunito text-3xl font-black pt-8 pb-14">
           Nossos cafés
         </h2>
+        <div className="pb-8">
+          <CoffeeList />
+        </div>
       </section>
     </div>
   );
