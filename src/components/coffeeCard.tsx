@@ -1,4 +1,5 @@
-import { Minus, Plus, ShoppingCartSimple } from "phosphor-react";
+import { ShoppingCartSimple } from "phosphor-react";
+import { InputQuantityCounter } from "./inputQuantityCounter";
 
 interface CoffeeCardProps {
   id: number;
@@ -40,26 +41,13 @@ export function CoffeeCard(props: CoffeeCardProps) {
             <span className="text-base text-base-text font-roboto font-normal ">
               R$
             </span>
-            <strong className="text-2xl text-base-text font-nunito font-black ">
+            <strong className="text-2xl text-base-text font-nunito font-black">
               {props.price}
             </strong>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <div className="w-[72px] h-[38px] flex items-center justify-center gap-1 bg-base-button rounded-md">
-              <button className="text-purple">
-                <Minus size={14} />
-              </button>
-              <input
-                className="flex items-center justify-center text-center w-5 h-[21px] border-none outline-none bg-transparent text-base text-base-title font-roboto font-medium"
-                inputMode="numeric"
-                type="text"
-                defaultValue={0}
-              />
-              <button className="text-purple">
-                <Plus size={14} />
-              </button>
-            </div>
-            <button className="w-[38px] h-[38px] flex items-center justify-center bg-purple-dark text-base-card rounded-md">
+            <InputQuantityCounter />
+            <button className="w-[38px] h-[38px] flex items-center justify-center bg-purple-dark text-base-card rounded-md hover:bg-purple">
               <ShoppingCartSimple weight="fill" size={20} />
             </button>
           </div>
