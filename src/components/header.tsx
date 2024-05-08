@@ -14,15 +14,17 @@ export function Header() {
           <span className="text-purple">
             <MapPin weight="fill" size={22} />
           </span>
-          <span className="text-purple-dark text-xs font-bold font-roboto">
+          <span className="text-purple-dark text-sm font-bold font-roboto">
             {city} {uf}
           </span>
         </div>
-        <NavLink
-          to={"/checkout"}
-          className="w-9 h-9 bg-yellow-light text-yellow-dark rounded-md flex items-center justify-center"
-        >
-          <ShoppingCart weight="fill" size={22} />
+        <NavLink to={"/checkout"}>
+          <button className="w-9 h-9 bg-yellow-light text-yellow-dark rounded-md flex items-center justify-center relative">
+            <ShoppingCart weight="fill" size={22} />
+            <span className="bg-yellow-dark text-white text-xs font-roboto font-bold w-5 h-5 absolute bottom-6 left-6 rounded-full flex items-center justify-center ">
+              3
+            </span>
+          </button>
         </NavLink>
       </nav>
     </header>

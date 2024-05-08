@@ -1,6 +1,6 @@
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
-import ImageHome from "../assets/image-home.svg";
 import { CoffeeCard } from "../components/coffeeCard";
+import ImageHome from "../assets/image-home.svg";
 import CoffeeExpresso from "../assets/types-coffee/coffee-expresso.svg";
 import CoffeeAmericano from "../assets/types-coffee/coffee-americano.svg";
 import CoffeeExpressoCremoso from "../assets/types-coffee/coffee-expresso-cremoso.svg";
@@ -136,7 +136,6 @@ export function Home() {
       price: "9,90",
     },
   ];
-
   return (
     <div>
       <section className="flex items-center justify-between py-[92px]">

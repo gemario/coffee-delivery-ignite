@@ -1,9 +1,6 @@
 import { Minus, Plus } from "phosphor-react";
-import { ComponentProps } from "react";
 
-interface InputQuantityCounterProps extends ComponentProps<"input"> {}
-
-export function InputQuantityCounter(props: InputQuantityCounterProps) {
+export function InputQuantityCounter() {
   return (
     <div className="w-[72px] h-[38px] flex items-center justify-center gap-1 bg-base-button rounded-md">
       <button className="text-purple hover:text-purple-dark">

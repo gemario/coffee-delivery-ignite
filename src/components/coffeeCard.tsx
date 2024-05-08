@@ -47,7 +47,7 @@ export function CoffeeCard(props: CoffeeCardProps) {
           </div>
           <div className="flex items-center justify-center gap-2">
             <InputQuantityCounter />
-            <button className="w-[38px] h-[38px] flex items-center justify-center bg-purple-dark text-base-card rounded-md hover:bg-purple">
+            <button className="w-[38px] h-[38px] flex items-center justify-center bg-purple-dark text-base-card rounded-md hover:bg-purple transition">
               <ShoppingCartSimple weight="fill" size={20} />
             </button>
           </div>
